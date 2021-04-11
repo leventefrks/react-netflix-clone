@@ -20,11 +20,11 @@ const Row = ({ title, url }) => {
   const [movies, setMovies] = useState([]);
 
   return (
-    <div className="w-full ml-10">
+    <div className="w-full ml-10 mr-10">
       <h2 className="text-white font-bold select-none capitalize text-xl tracking-wide">
         {title}
       </h2>
-      <div className="w-full flex space-x-3 py-4 pl-4 overflow-x-scroll overflow-y-hidden">
+      <div className="w-full flex space-x-3 py-4 overflow-x-scroll overflow-y-hidden">
         {movies &&
           movies.map(
             movie =>

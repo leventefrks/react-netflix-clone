@@ -1,8 +1,12 @@
 import { API_KEY } from './../api';
 
-// const GENRE_IDS = [
+const BASE_DISCOVER_URL_BY_GENRE = '/discover/movie?with_genres=';
 
-// ]
+const GENRE_DRAMA_ID = 18;
+const GENRE_COMEDY_ID = 35;
+const GENRE_ACTION_ID = 28;
+const GENRE_DOCUMENTARY_ID = 99;
+const GENRE_HORROR_ID = 27;
 
 export const REQUESTS = [
   {
@@ -13,27 +17,27 @@ export const REQUESTS = [
   {
     id: 2,
     title: 'drama',
-    url: `/discover/movie?with_genres=18&primary_release_year=2021&api_key=${API_KEY}`,
+    url: `${BASE_DISCOVER_URL_BY_GENRE}${GENRE_DRAMA_ID}&primary_release_year=2021&api_key=${API_KEY}`,
   },
   {
     id: 3,
     title: 'comedies',
-    url: `/discover/movie?with_genres=35&primary_release_year=2021&api_key=${API_KEY}`,
+    url: `${BASE_DISCOVER_URL_BY_GENRE}${GENRE_COMEDY_ID}&primary_release_year=2021&api_key=${API_KEY}`,
   },
   {
     id: 4,
     title: 'action',
-    url: `/discover/movie?with_genres=28&primary_release_year=2021&api_key=${API_KEY}`,
+    url: `${BASE_DISCOVER_URL_BY_GENRE}${GENRE_ACTION_ID}&primary_release_year=2021&api_key=${API_KEY}`,
   },
   {
     id: 5,
     title: 'documentaries',
-    url: `/discover/movie?with_genres=99&primary_release_year=2021&api_key=${API_KEY}`,
+    url: `${BASE_DISCOVER_URL_BY_GENRE}${GENRE_DOCUMENTARY_ID}&primary_release_year=2021&api_key=${API_KEY}`,
   },
   {
     id: 6,
     title: 'horror',
-    url: `/discover/movie?with_genres=27&primary_release_year=2021&api_key=${API_KEY}`,
+    url: `${BASE_DISCOVER_URL_BY_GENRE}${GENRE_HORROR_ID}&primary_release_year=2021&api_key=${API_KEY}`,
   },
 ];
 
