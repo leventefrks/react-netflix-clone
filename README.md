@@ -1,5 +1,7 @@
-# React Custom Starter Pack
+# React Netflix Clone
 
+- React
+- Axios
 - TailwindCSS
 
 ## Available Scripts
