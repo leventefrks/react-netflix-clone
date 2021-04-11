@@ -1,33 +1,21 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function TheMenu() {
+const PrimaryMenu = ({ items }) => {
   return (
     <ul className="flex space-x-4 ml-6">
-      <li>
-        <a href="#" className="text-white">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#" className="text-white">
-          Tv Shows
-        </a>
-      </li>
-      <li>
-        <a href="#" className="text-white">
-          Movies
-        </a>
-      </li>
-      <li>
-        <a href="#" className="text-white">
-          New & Popular
-        </a>
-      </li>
-      <li>
-        <a href="#" className="text-white">
-          My List
-        </a>
-      </li>
+      {items.map(item => (
+        <li>
+          <a href="#" className="text-white capitalize">
+            {item.name}
+          </a>
+        </li>
+      ))}
     </ul>
   );
-}
+};
+
+PrimaryMenu.propTypes = {
+  items: PropTypes.array,
+};
+
+export default PrimaryMenu;

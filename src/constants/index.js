@@ -42,3 +42,26 @@ export const REQUESTS = [
 ];
 
 export const POSTER_PATH_URL = 'https://image.tmdb.org/t/p/w500';
+
+export const MENU_ITEMS = [
+  {
+    name: 'home',
+    route: '',
+  },
+  {
+    name: 'tv shows',
+    route: '',
+  },
+  {
+    name: 'movies',
+    route: '',
+  },
+  {
+    name: 'new & popular',
+    route: '',
+  },
+  {
+    name: 'my list',
+    route: '',
+  },
+];
