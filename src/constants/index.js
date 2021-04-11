@@ -1,5 +1,9 @@
 import { API_KEY } from './../api';
 
+// const GENRE_IDS = [
+
+// ]
+
 export const REQUESTS = [
   {
     id: 1,
@@ -15,6 +19,21 @@ export const REQUESTS = [
     id: 3,
     title: 'comedies',
     url: `/discover/movie?with_genres=35&primary_release_year=2021&api_key=${API_KEY}`,
+  },
+  {
+    id: 4,
+    title: 'action',
+    url: `/discover/movie?with_genres=28&primary_release_year=2021&api_key=${API_KEY}`,
+  },
+  {
+    id: 5,
+    title: 'documentaries',
+    url: `/discover/movie?with_genres=99&primary_release_year=2021&api_key=${API_KEY}`,
+  },
+  {
+    id: 6,
+    title: 'horror',
+    url: `/discover/movie?with_genres=27&primary_release_year=2021&api_key=${API_KEY}`,
   },
 ];
 
