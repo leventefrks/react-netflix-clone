@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import axios from '../axios';
+import RowTitle from './RowTitle';
 import { FaChevronRight } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import { POSTER_PATH_URL } from './../constants';
@@ -22,9 +23,7 @@ const Row = ({ title, url }) => {
 
   return (
     <div className="w-full ml-10 mr-10">
-      <h2 className="text-white font-bold select-none capitalize text-xl tracking-wide">
-        {title}
-      </h2>
+      <RowTitle title={title} />
       <div className="group w-full flex space-x-3 py-4 overflow-x-scroll overflow-y-hidden relative">
         {movies &&
           movies.map(
