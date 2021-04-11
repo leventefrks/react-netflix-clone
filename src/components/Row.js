@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 import axios from '../axios';
 import { useEffect, useState } from 'react';
+import { POSTER_PATH_URL } from './../constants';
 
 const Row = ({ title, url }) => {
-  const POSTER_PATH_URL = 'https://image.tmdb.org/t/p/w500';
-
   useEffect(() => {
     const fetchData = async () => {
       try {

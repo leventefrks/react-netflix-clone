@@ -17,3 +17,5 @@ export const REQUESTS = [
     url: `/discover/movie?with_genres=35&primary_release_year=2021&api_key=${API_KEY}`,
   },
 ];
+
+export const POSTER_PATH_URL = 'https://image.tmdb.org/t/p/w500';
