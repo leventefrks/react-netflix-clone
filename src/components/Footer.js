@@ -6,7 +6,7 @@ import {
 
 const Footer = ({ children }) => {
   return (
-    <footer className="max-w-5xl mx-auto mb-12 text-gray-400">
+    <footer className="max-w-5xl mx-auto mb-12 text-gray-500">
       <ul className="flex space-x-5 mb-3">
         <li>
           <a href="">
