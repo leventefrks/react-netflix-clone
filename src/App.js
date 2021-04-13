@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Row from './components/Row';
+import Footer from './components/Footer';
 import axios from './axios';
 import { REQUESTS, MENU_ITEMS } from './constants';
 
@@ -14,6 +15,7 @@ function App() {
           <Row key={request.id} title={request.title} url={request.url} />
         ))}
       </main>
+      <Footer />
     </div>
   );
 }
