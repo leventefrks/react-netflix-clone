@@ -72,7 +72,7 @@ const Footer = ({ children }) => {
         <ul className="flex flex-col capitalize space-y-4">
           <li>
             <a className="hover:underline" href="">
-              audio and aubtitles
+              audio and subtitles
             </a>
           </li>
           <li>
@@ -87,7 +87,7 @@ const Footer = ({ children }) => {
           </li>
           <li>
             <a className="hover:underline" href="">
-              cookie preferencies
+              cookie preferences
             </a>
           </li>
         </ul>

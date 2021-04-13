@@ -9,7 +9,7 @@ const Navbar = ({ items }) => {
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 100) {
         setBackground('bg-black');
       } else {
         setBackground('bg-transparent');
@@ -19,7 +19,7 @@ const Navbar = ({ items }) => {
 
   return (
     <header
-      className={`w-full fixed z-10 flex justify-between duration-200 ease-in ${background}`}
+      className={`w-full fixed z-10 flex justify-between duration-100 ease-in ${background}`}
     >
       <nav className="w-full py-4 pl-20 pr-8 flex items-center">
         <div className="w-full flex items-center">
